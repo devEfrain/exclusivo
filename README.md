@@ -1,2 +1,2 @@
-# esclusivo
+# exclusivo
 Tarifario Taxi Exclusivo
