@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Taxi Exclusivo">
+    <meta property='og:title' content='Tarifario | Taxi Exclusivo'/>
+    <meta property='og:image' content='favicon_big.png'/>
+    <meta property='og:description' content='Consulta las tarifas oficiales del servicio de taxi'/>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="iconApp-152x152.png">
+    <link rel="apple-touch-startup-image" href="iconApp-152x152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" type="text/css" href="css/taxiexclusivo.css">
+    <script type="text/javascript" src="js/genesis.js"></script>
+    <script type="text/javascript" src="js/registerSW.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Tarifario | Taxi Exclusivo</title>
+</head>
+<body>
+    <div class="loader">
+        <p>
+            <img src="splash.png" width="150" alt="Taxi Exclusivo">
+        </p>
+        <br>
+        <label class="loader">Cargando</label>
+    </div>
+    <div class="container hide">
+        <div class="banner">
+            <img src="src/anunciate.gif" alt="Publicidad" width="100%" height="100%">
+        </div>
+        <div class="btns">
+            <input type="button" class="infoZona degrade" value="Info. de zonas">
+            <input type="button" class="tariZona degrade" value="Tarifa de zonas">
+        </div>
+        <div class="module">
+            <img src="splash.png" width="150" alt="Taxi Exclusivo">
+        </div>
+        <div class="modulews"></div>
+        <div class="module-tarifa hide">
+            <div class="travel">
+                <p></p>
+                <div class="grupInput">
+                    <input type="text" class="ini" placeholder="¿De dónde sales? (ej. ''Centro'')">
+                    <select name="" id="" class="cmbIni"></select>
+                </div>
+                <div class="grupInput">
+                    <input type="text" class="fin" placeholder="¿A dónde vas? (ej. ''Guadalupana'')">
+                    <select class="cmbFin"></select>
+                </div>
+            </div>
+            <div class="selectableZone">
+                
+            </div>
+            <div class="tarifaZona degrade hide">
+                <div class="containerPrice">
+                    <div class="price">
+                    </div>
+                </div>
+                <br>
+            </div>
+            <p><a href="#">Servicio + Tarifa Adicional en caso de utilizar el servicio de Taxi Exclusivo (Click para ver tarifas adicionales).</a></p>
+        </div>
+        <div class="footer">
+            <p>
+                <div class="wsBtn degrade">
+                    Solicitar Taxi Exclusivo <br> por Whatsapp
+                </div>
+            </p>
+            <div class="lnk">
+                <p>
+                    <a href="html/tc.html">T&eacute;rminos y condiciones</a>&nbsp;|&nbsp;
+                    <a href="html/privacy.html">Pol&iacute;ticas de privacidad</a>&nbsp;|&nbsp;
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfA84QAuris9-J607B8EoeyOi7Lq4biM6oB9hA1lssMku9cFA/viewform">Reportar</a>&nbsp;|&nbsp;
+                    <a href="html/about.html">Acerca de</a>
+                </p>
+            </div>
+        </div>
+        <div class="likeus hide">
+            <div class="likeLogo">0
+                <img src="iconApp-128x128.png" alt="Logo" width="100px">
+            </div>
+            <div class="likeText">
+                ¿Te es &uacute;til el Tarifario de Taxi Exclusivo?
+                <br>
+                Regalanos un Like a nuestra fanPage! 
+                <br>
+                y enterate de nuestras novedades.
+                <br><br>
+                <div class="likeBtn degrade">
+                    Me encanta !
+                </div>
+                <div class="dislikeBtn degradeRed">
+                    Ahorita no joven
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

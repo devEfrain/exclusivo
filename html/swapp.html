@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property='og:title' content='.:: Taxi Exclusivo ::.'/>
+    <meta property='og:image' content='favicon.png'/>
+    <meta property='og:description' content='Haz click para solicitar taxi por Whatsapp'/>
+    <link rel="stylesheet" type="text/css" href="../css/taxiexclusivo.css?dev=1.8">
+    <title>Taxi Exclusivo</title>
+    <script>
+        window.addEventListener('load', function(){
+            var domain = "https://api.whatsapp.com/send?";
+            var phone = "529848063130";
+            var msj;
+
+            var btnGetService = document.querySelector('.getService');
+            var btnSaveAndGetService = document.querySelector('.saveAndGetService');
+            var lbl1 = document.querySelector('.lbl1');
+            var lbl2 = document.querySelector('.lbl2');
+            var address = document.querySelector('.address');
+
+            lbl1.innerHTML = 'TAXI';
+            lbl2.innerHTML = 'EXCLUSIVO';
+
+            btnGetService.addEventListener('click', function(){
+                msj = "Necesito un Taxi Exclusivo por favor con direccion: ";
+                if(address.value == '' || address.value.substring(0, 1) == ' '){
+                    alert("Por favor ingresa tu direcci\u00F3n");
+                }else{
+                    msj+= address.value;
+                    lbl1.innerHTML = 'SOLICITANDO';
+                    lbl2.innerHTML = 'SERVICIO';
+                    document.location.href = domain + 'phone=' + phone + '&text=' + msj;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <br>
+    <p style="text-align: center;">
+        <img src="../favicon.png" width="100" alt="Taxi Exclusivo">
+    </p>
+    <p style="text-align: center; font-size: 25px;">
+        <label class="lbl1" style="font-family: 'nx_bold';"></label>&nbsp;<label class="lbl2" style="font-family: 'nx_light';"></label>
+    </p>
+    <br>
+    <p style="font-family: 'nx_light'; margin: 0px 20px 0px 20px;">
+        <label style="font-family: 'nx_bold';">Escribe tu direcci&oacute;n</label> (Colonia/fraccionamiento, Calle y Cruzamiento, Manzana, Lote, N&uacute;mero de casa)
+    </p>
+    <p style="text-align: center">
+        <textarea class="address" style="width: calc(100% - 40px); font-family: 'nx_light';" rows="8"></textarea>
+    </p>
+    <p>
+        <div class="getService degrade" style="text-align: center;">
+            Solicitar Taxi Exclusivo <br> por Whatsapp
+        </div>
+        <p></p>
+        <div class="saveAndGetService degrade hide" style="text-align: center;">
+            Guardar Direcci&oacute;n y Solicitar Taxi Exclusivo
+        </div>
+    </p>
+</body>
+</html>
